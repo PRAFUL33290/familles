@@ -3,7 +3,7 @@ Dépôt pour gérer des informations sur les familles
 
 ## Arbre de Marley (AOT)
 
-Arbre complet : [`/home/runner/work/familles/familles/marley/arbre_genealogique.md`](/marley/arbre_genealogique.md)
+Arbre complet : [`marley/arbre_genealogique.md`](/marley/arbre_genealogique.md)
 
 ### Vue rapide
 
