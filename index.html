@@ -3,36 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Familles</title>
+  <title>Arbre de Marley — Attaque des Titans</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="page">
-    <section class="hero">
-      <p class="badge">Projet familles</p>
-      <h1>Bienvenue sur la page Familles</h1>
+  <header class="hero">
+    <div class="hero-content">
+      <p class="badge">L’Attaque des Titans — Marley</p>
+      <h1>Arbre interactif des familles et guerriers de Mahr</h1>
       <p class="intro">
-        Une page simple, moderne et responsive pour présenter ton projet avec une mise en page claire.
+        Comprends les liens entre les familles Braun, Grice, Galliard, Hoover, Leonhart, Tybur, Fritz et Jäger.
+        Clique sur un personnage pour afficher son rôle, ses liens et son Titan.
       </p>
-      <a class="button" href="#contenu">Découvrir</a>
+      <div class="actions">
+        <button class="filter active" data-filter="all">Tous</button>
+        <button class="filter" data-filter="braun">Famille Braun</button>
+        <button class="filter" data-filter="grice">Famille Grice</button>
+        <button class="filter" data-filter="galliard">Famille Galliard</button>
+        <button class="filter" data-filter="titan">Titans primordiaux</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="notice">
+      <h2>Important</h2>
+      <p>
+        Ce site ne montre pas un arbre généalogique complet de tout Marley, car beaucoup de parents ne sont pas nommés.
+        Il présente surtout les familles eldiennes liées à Marley et à l’unité des Guerriers.
+      </p>
     </section>
 
-    <section id="contenu" class="cards">
-      <article class="card">
-        <h2>Présentation</h2>
-        <p>Ajoute ici le texte principal de ton projet, ton résumé ou tes informations importantes.</p>
-      </article>
+    <section class="tree" aria-label="Arbre généalogique interactif">
+      <div class="family-block" data-group="braun">
+        <h2>Famille Braun</h2>
+        <div class="nodes">
+          <button class="person" data-id="karina" data-tags="braun">Karina Braun</button>
+          <button class="person titan" data-id="reiner" data-tags="braun titan">Reiner Braun</button>
+          <button class="person" data-id="gabi" data-tags="braun">Gabi Braun</button>
+        </div>
+        <p class="relation">Karina est la mère de Reiner. Gabi est la cousine de Reiner.</p>
+      </div>
 
-      <article class="card">
-        <h2>Objectif</h2>
-        <p>Explique le but de la page, les valeurs ou les éléments que tu veux mettre en avant.</p>
-      </article>
+      <div class="family-block" data-group="grice">
+        <h2>Famille Grice</h2>
+        <div class="nodes">
+          <button class="person" data-id="grice" data-tags="grice">Grice</button>
+          <button class="person" data-id="colt" data-tags="grice">Colt Grice</button>
+          <button class="person titan" data-id="falco" data-tags="grice titan">Falco Grice</button>
+        </div>
+        <p class="relation">Falco et Colt sont frères. Grice est leur oncle, lié aux restaurationnistes eldiens.</p>
+      </div>
 
-      <article class="card">
-        <h2>Contact</h2>
-        <p>Tu peux placer ici une adresse mail, un lien ou une information pratique.</p>
-      </article>
+      <div class="family-block" data-group="galliard">
+        <h2>Famille Galliard</h2>
+        <div class="nodes">
+          <button class="person titan" data-id="marcel" data-tags="galliard titan">Marcel Galliard</button>
+          <button class="person titan" data-id="porco" data-tags="galliard titan">Porco Galliard</button>
+        </div>
+        <p class="relation">Marcel est le grand frère de Porco. Les deux sont liés au Titan Mâchoire.</p>
+      </div>
+
+      <div class="family-block" data-group="warriors">
+        <h2>Autres guerriers de Marley</h2>
+        <div class="nodes">
+          <button class="person titan" data-id="annie" data-tags="titan">Annie Leonhart</button>
+          <button class="person titan" data-id="bertholdt" data-tags="titan">Bertholdt Hoover</button>
+          <button class="person titan" data-id="pieck" data-tags="titan">Pieck Finger</button>
+          <button class="person titan" data-id="zeke" data-tags="titan">Zeke Jäger</button>
+        </div>
+        <p class="relation">Ils servent Marley comme détenteurs de Titans ou membres clés de l’unité des Guerriers.</p>
+      </div>
+
+      <div class="family-block" data-group="royal">
+        <h2>Lignée royale et pouvoir politique</h2>
+        <div class="nodes">
+          <button class="person titan" data-id="dina" data-tags="titan">Dina Fritz</button>
+          <button class="person titan" data-id="tybur" data-tags="titan">Famille Tybur</button>
+          <button class="person" data-id="magath" data-tags="">Theo Magath</button>
+        </div>
+        <p class="relation">Dina vient du sang royal eldian. Les Tybur possèdent le Titan Marteau d’Armes et influencent Marley.</p>
+      </div>
+    </section>
+
+    <aside class="panel" id="infoPanel">
+      <p class="panel-label">Clique sur un personnage</p>
+      <h2 id="panelName">Aucune sélection</h2>
+      <p id="panelRole">Sélectionne une carte pour afficher les informations.</p>
+      <ul id="panelDetails"></ul>
+    </aside>
+
+    <section class="timeline">
+      <h2>Résumé rapide pour comprendre Marley</h2>
+      <div class="steps">
+        <article><strong>1.</strong> Marley utilise des Eldiens comme soldats et Guerriers.</article>
+        <article><strong>2.</strong> Les familles eldiennes vivent souvent dans des zones contrôlées comme Liberio.</article>
+        <article><strong>3.</strong> Les enfants candidats veulent hériter d’un Titan pour devenir “Marleyens honoraires”.</article>
+        <article><strong>4.</strong> Reiner, Annie, Bertholdt et Marcel partent vers Paradis pour récupérer le Titan Originel.</article>
+        <article><strong>5.</strong> Zeke joue un double jeu entre Marley, Eldia et son propre plan.</article>
+      </div>
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
