@@ -1,0 +1,237 @@
+{
+  "univers": "L'Attaque des Titans",
+  "nation": "Marley (Mareh)",
+  "contexte_historique": {
+    "description": "Il y a environ 2000 ans, Ymir Fritz obtint le pouvoir des Titans. L'Empire Eldien domina le monde pendant des siècles. Il y a ~100 ans, Marley prit sa revanche, reprit le continent et relégua les Eldiens dans des zones d'internement appelées 'Liberio'. Les Eldiens restés hors des murs sont traités comme des sous-citoyens, portant des brassards. Marley exploite certains Eldiens comme 'Guerriers' en leur donnant temporairement le pouvoir des Titans."
+  },
+  "familles": [
+    {
+      "nom": "Fritz / Tybur",
+      "origine": "Eldiens royaux alliés à Marley",
+      "description": "La famille Tybur est une famille eldienne noble qui choisit de s'allier à Marley après la chute de l'Empire Eldien. Ils détiennent le Titan Marteau de Guerre. Ils sont les seuls Eldiens à vivre librement à Marley et jouissent d'un immense prestige. Ils ont forgé le mythe du héros 'Helos' pour légitimer la domination de Marley.",
+      "membres": [
+        {
+          "id": "ymir_fritz",
+          "prenom": "Ymir",
+          "nom_famille": "Fritz",
+          "surnom": "La Fondatrice / L'Ancêtre",
+          "statut": "Décédée (il y a ~2000 ans)",
+          "pouvoir_titan": "Titan Fondateur (Titan Colossal originel)",
+          "role": "Origine de tous les pouvoirs Titans. Esclave du roi Fritz. Tout Sujet d'Ymir peut devenir un Titan.",
+          "enfants": ["roi_fritz_1er"]
+        },
+        {
+          "id": "roi_fritz_1er",
+          "prenom": "Roi Fritz",
+          "nom_famille": "Fritz",
+          "surnom": "Premier Roi",
+          "statut": "Décédé",
+          "role": "Fondateur de la lignée royale eldienne",
+          "parents": ["ymir_fritz"],
+          "enfants": ["lignee_fritz"]
+        },
+        {
+          "id": "karl_fritz",
+          "prenom": "Karl",
+          "nom_famille": "Fritz",
+          "surnom": "Le Roi des Murs",
+          "statut": "Décédé",
+          "role": "Roi qui abandonna le continent et emmena les Eldiens sur l'île Paradis derrière les murs. Conclut un accord secret avec les Tybur pour mettre fin à l'Empire Eldien. Fit croire que c'était le héros 'Helos' qui avait vaincu les Eldiens.",
+          "parents": ["lignee_fritz"],
+          "enfants": ["dina_fritz"]
+        },
+        {
+          "id": "dina_fritz",
+          "prenom": "Dina",
+          "nom_famille": "Fritz",
+          "surnom": "Titan souriant / Annie du sourire",
+          "statut": "Décédée (transformée en Titan Pur puis dévorée)",
+          "pouvoir_titan": "Titan Pur (sans intelligence)",
+          "role": "Dernière descendante royale des Fritz en dehors des murs. Voulait rejoindre ses cousins sur Paradis. Mariée à Grisha Yeager à Liberio.",
+          "parents": ["karl_fritz"],
+          "conjoints": ["grisha_yeager"],
+          "enfants": ["zeke_yeager"]
+        },
+        {
+          "id": "tybur_ancetre",
+          "prenom": "Ancêtre Tybur",
+          "nom_famille": "Tybur",
+          "statut": "Décédé",
+          "pouvoir_titan": "Titan Marteau de Guerre",
+          "role": "Eldien royal qui s'allia à Marley et forgea avec Karl Fritz le mythe du héros Helos. En échange, les Tybur vivent librement à Marley avec prestige et fortune.",
+          "enfants": ["lignee_tybur"]
+        },
+        {
+          "id": "willy_tybur",
+          "prenom": "Willy",
+          "nom_famille": "Tybur",
+          "statut": "Décédé (tué par le Titan Attaquant d'Eren)",
+          "role": "Chef de la famille Tybur. Révéla publiquement lors d'un festival la vérité sur l'histoire et déclara la guerre à Paradis. Tué lors de l'assaut d'Eren.",
+          "parents": ["lignee_tybur"],
+          "freres_soeurs": ["lara_tybur"]
+        },
+        {
+          "id": "lara_tybur",
+          "prenom": "Lara",
+          "nom_famille": "Tybur",
+          "statut": "Décédée (dévorée par Eren Yeager pour lui voler son pouvoir)",
+          "pouvoir_titan": "Titan Marteau de Guerre (véritable détentrice)",
+          "role": "Sœur de Willy. Vraie wielder du Titan Marteau de Guerre, gardé secret pour protéger la famille.",
+          "parents": ["lignee_tybur"],
+          "freres_soeurs": ["willy_tybur"]
+        }
+      ]
+    },
+    {
+      "nom": "Yeager",
+      "origine": "Eldiens de Liberio (zone d'internement de Marley)",
+      "description": "Famille eldienne de Liberio. Grisha Yeager était un médecin et membre secret des Eldiens Restaurateurs. Son fils Zeke devint le Guerrier de Marley portant le Titan Bête. La famille incarne le déchirement entre loyauté à Marley et résistance eldienne.",
+      "membres": [
+        {
+          "id": "grisha_yeager",
+          "prenom": "Grisha",
+          "nom_famille": "Yeager",
+          "statut": "Décédé (dévoré par Eren pour lui transmettre l'Attaquant et le Fondateur)",
+          "pouvoir_titan": "Titan Attaquant puis Titan Fondateur (volé aux Reiss)",
+          "role": "Médecin eldien de Liberio. Membre des Eldiens Restaurateurs. Envoyé sur Paradis par Marley. Marié en secondes noces à Carla, père d'Eren. Son fils Zeke le dénonça aux Marliens, envoyant lui et Dina à Paradis.",
+          "conjoints": ["dina_fritz", "carla_yeager"],
+          "enfants": ["zeke_yeager", "eren_yeager"],
+          "parents": ["famille_yeager_liberio"]
+        },
+        {
+          "id": "faye_yeager",
+          "prenom": "Faye",
+          "nom_famille": "Yeager",
+          "statut": "Décédée (tuée par Kruger sous les ordres de Marley)",
+          "role": "Petite sœur de Grisha. Sa mort causa par les Marleyens fut le déclencheur de l'engagement de Grisha dans la résistance eldienne.",
+          "parents": ["famille_yeager_liberio"],
+          "freres_soeurs": ["grisha_yeager"]
+        },
+        {
+          "id": "zeke_yeager",
+          "prenom": "Zeke",
+          "nom_famille": "Yeager",
+          "surnom": "Zeke le Guerrier",
+          "statut": "Décédé (sacrifié pour activer le Grondement avec Eren)",
+          "pouvoir_titan": "Titan Bête",
+          "role": "Fils de Grisha et Dina. Guerrier d'élite de Marley. Demi-frère d'Eren. A le sang royal Fritz par sa mère. Dénonça ses parents à Marley enfant, influencé par son grand-père maternel et le capitaine Ksaver. Voulait utiliser le pouvoir fondateur pour stériliser tous les Sujets d'Ymir (Plan Euthanasie).",
+          "parents": ["grisha_yeager", "dina_fritz"],
+          "demi_freres_soeurs": ["eren_yeager"]
+        },
+        {
+          "id": "eren_yeager",
+          "prenom": "Eren",
+          "nom_famille": "Yeager",
+          "statut": "Décédé (tué par Mikasa)",
+          "pouvoir_titan": "Titan Attaquant + Titan Fondateur + Titan Marteau de Guerre",
+          "role": "Fils de Grisha et Carla. Né sur Paradis. Demi-frère de Zeke. Déclencha le Grondement pour anéantir le monde extérieur afin de protéger Paradis.",
+          "parents": ["grisha_yeager", "carla_yeager"],
+          "demi_freres_soeurs": ["zeke_yeager"],
+          "note": "Personnage pivot entre Paradis et Marley"
+        }
+      ]
+    },
+    {
+      "nom": "Galliard",
+      "origine": "Eldiens de Liberio — Famille de Guerriers",
+      "description": "Famille eldienne dont les deux fils devinrent successivement Guerriers de Marley portant le Titan Mâchoire. Marcel, l'aîné, sacrifia son frère Porco pour lui sauver la mise lors de la candidature. Il mourut sur Paradis, dévoré par Ymir. Porco hérita du Titan Mâchoire.",
+      "membres": [
+        {
+          "id": "mr_galliard",
+          "prenom": "Père Galliard",
+          "nom_famille": "Galliard",
+          "statut": "Inconnu",
+          "role": "Père des frères Galliard. Famille de Guerriers de Marley.",
+          "enfants": ["marcel_galliard", "porco_galliard"]
+        },
+        {
+          "id": "marcel_galliard",
+          "prenom": "Marcel",
+          "nom_famille": "Galliard",
+          "statut": "Décédé (dévoré par Ymir sur Paradis)",
+          "pouvoir_titan": "Titan Mâchoire",
+          "role": "Guerrier de Marley. Lors des candidatures, convainquit secrètement les sélectionneurs de rejeter Porco pour protéger son frère. Fut dévoré par Ymir sur l'île Paradis lors de la mission d'infiltration.",
+          "parents": ["mr_galliard"],
+          "freres_soeurs": ["porco_galliard"]
+        },
+        {
+          "id": "porco_galliard",
+          "prenom": "Porco",
+          "nom_famille": "Galliard",
+          "statut": "Décédé (se sacrifia pour permettre à Falco de manger le Titan Mâchoire)",
+          "pouvoir_titan": "Titan Mâchoire (hérité après la mort de Marcel)",
+          "role": "Guerrier de Marley. Hérita du Titan Mâchoire qu'il pensait mériter naturellement, ignorant que son frère l'avait protégé. Rival de Reiner. Se sacrifia lors de la bataille de Fort Slava.",
+          "parents": ["mr_galliard"],
+          "freres_soeurs": ["marcel_galliard"]
+        }
+      ]
+    },
+    {
+      "nom": "Braun / Leonhart",
+      "origine": "Eldiens de Liberio — Familles de Guerriers",
+      "description": "Deux familles eldiennes de Liberio dont les enfants devinrent Guerriers de Marley. Reiner Braun (Titan Cuirassé) est né d'une mère eldienne et d'un père marleyen qui refusa de le reconnaître. Annie Leonhart (Titan Féminin) fut entraînée dès l'enfance par son père pour devenir guerrière et racheter l'honneur familial.",
+      "membres": [
+        {
+          "id": "karina_braun",
+          "prenom": "Karina",
+          "nom_famille": "Braun",
+          "statut": "Vivante (lors des événements)",
+          "role": "Mère de Reiner. Eldienne de Liberio. Admirait les Marleyens et rêvait que son fils devienne Guerrier pour s'élever socialement et peut-être être reconnue par le père marleyen de Reiner.",
+          "enfants": ["reiner_braun"],
+          "conjoints": ["pere_marleyen_reiner"]
+        },
+        {
+          "id": "pere_marleyen_reiner",
+          "prenom": "Père (anonyme)",
+          "nom_famille": "Marleyen",
+          "statut": "Vivant (lors des événements)",
+          "role": "Officier ou citoyen marleyen. Eut une relation avec Karina Braun, une Eldienne. Refusa de reconnaître Reiner comme son fils, redoutant la stigmatisation sociale.",
+          "enfants": ["reiner_braun"],
+          "conjoints": ["karina_braun"]
+        },
+        {
+          "id": "reiner_braun",
+          "prenom": "Reiner",
+          "nom_famille": "Braun",
+          "statut": "Vivant (à la fin du manga)",
+          "pouvoir_titan": "Titan Cuirassé",
+          "role": "Mi-marleyen, mi-eldien. Guerrier de Marley. Infiltra Paradis avec Bertholdt et Annie. Souffrit d'une dissociation identitaire (se croyait parfois soldat de Paradis). Symbole du déchirement de l'Eldien entre deux mondes.",
+          "parents": ["karina_braun", "pere_marleyen_reiner"]
+        },
+        {
+          "id": "mr_leonhart",
+          "prenom": "Père Leonhart",
+          "nom_famille": "Leonhart",
+          "statut": "Vivant (lors des événements)",
+          "role": "Eldien de Liberio. Adopta Annie qui n'était pas biologiquement sa fille. L'entraîna au combat dès sa plus jeune enfance dans l'espoir qu'elle devienne Guerrière et qu'il soit naturalisé marleyen. Regretta ses actions par la suite.",
+          "enfants": ["annie_leonhart"]
+        },
+        {
+          "id": "annie_leonhart",
+          "prenom": "Annie",
+          "nom_famille": "Leonhart",
+          "statut": "Vivante (à la fin du manga, après cristallisation puis libération)",
+          "pouvoir_titan": "Titan Féminin",
+          "role": "Guerrière de Marley. Adopta par M. Leonhart. Infiltra Paradis. Causa de nombreuses morts. Se cristallisa pour éviter la capture. Seul but : retrouver son père.",
+          "parents": ["mr_leonhart"]
+        }
+      ]
+    },
+    {
+      "nom": "Ksaver / Zeke (lien mentor)",
+      "origine": "Eldiens de Liberio",
+      "description": "Tom Ksaver, ancien porteur du Titan Bête, devint la figure paternelle de substitution pour Zeke Yeager. Il lui transmit sa vision idéologique : utiliser le pouvoir fondateur pour stériliser tous les Sujets d'Ymir et mettre fin à la souffrance eldienne sans violence.",
+      "membres": [
+        {
+          "id": "tom_ksaver",
+          "prenom": "Tom",
+          "nom_famille": "Ksaver",
+          "statut": "Décédé (se suicida après avoir transmis le Titan Bête)",
+          "pouvoir_titan": "Titan Bête (transmis à Zeke)",
+          "role": "Ancien Guerrier de Marley. Figure paternelle de Zeke. Lui transmit son idéologie du 'Plan Euthanasie' : stériliser les Eldiens via le pouvoir fondateur pour sauver l'humanité des Titans. Devint le mentor spirituel de Zeke.",
+          "lien_non_biologique": ["zeke_yeager"]
+        }
+      ]
+    }
+  ]
+}
