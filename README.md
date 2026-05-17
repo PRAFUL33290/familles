@@ -1,7 +1,7 @@
 # familles
 Dépôt pour gérer des informations sur les familles
 
-## Arbre de Marley (AOT)
+## Arbre de Marley (L'Attaque des Titans)
 
 Arbre complet : [`marley/arbre_genealogique.md`](/marley/arbre_genealogique.md)
 
